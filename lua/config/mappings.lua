@@ -17,5 +17,3 @@ vim.keymap.set("n", "<leader>cf", vim.lsp.buf.format)
 vim.keymap.set("n", "<leader>ca", vim.lsp.buf.code_action)
 
 vim.keymap.set("n", "<leader>w", ":lua vim.lsp.buf.format({ async = true }); vim.cmd('write')<CR>")
-
-vim.keymap.set("n", "<leader>gs", :)
