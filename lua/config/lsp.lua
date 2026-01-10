@@ -27,12 +27,11 @@ end
 local cmp_autopairs = require('nvim-autopairs.completion.cmp')
 local cmp = require('cmp')
 cmp.event:on(
-  'confirm_done',
-  cmp_autopairs.on_confirm_done()
+    'confirm_done',
+    cmp_autopairs.on_confirm_done()
 )
 
 -- Setup nvim-cmp
-local cmp = require("cmp")
 cmp.setup({
     mapping = cmp.mapping.preset.insert({
         ["<CR>"] = cmp.mapping.confirm({ select = true }),
@@ -48,7 +47,6 @@ cmp.setup({
 
 -- Setup autopairs integration
 require("nvim-autopairs").setup({})
-local cmp_autopairs = require("nvim-autopairs.completion.cmp")
 cmp.event:on("confirm_done", cmp_autopairs.on_confirm_done())
 
 -- Mason-LSP setup
