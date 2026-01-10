@@ -7,16 +7,16 @@ return {
         -- Open git status quickly
         map("n", "<leader>gs", ":G<CR>", { desc = "Git status" })
         -- Stage current file
-        map("n", "<leader>ga", ":Gwrite<CR>", { desc = "Git add current file" })
+        map("n", "<leader>ga", ":G write<CR>", { desc = "Git add current file" })
         -- Git commit
-        map("n", "<leader>gc", ":Gcommit<CR>", { desc = "Git commit" })
+        map("n", "<leader>gc", ":G commit<CR>", { desc = "Git commit" })
         -- Git push
-        map("n", "<leader>gp", ":Gpush<CR>", { desc = "Git push" })
+        map("n", "<leader>gp", ":G push<CR>", { desc = "Git push" })
 
-        map("n", "<leader>gl", ":Gpull<CR>", { desc = "Git pull" })
+        map("n", "<leader>gl", ":G pull<CR>", { desc = "Git pull" })
         -- Git blame for current file
-        map("n", "<leader>gb", ":Gblame<CR>", { desc = "Git blame" })
-        map("n", "<leader>gd", ":Gdiffsplit<CR>", { desc = "Git diff current file" })
+        map("n", "<leader>gb", ":G blame<CR>", { desc = "Git blame" })
+        map("n", "<leader>gd", ":G diffsplit<CR>", { desc = "Git diff current file" })
 
         vim.api.nvim_create_autocmd("User", {
             pattern = "FugitiveUpdated",
