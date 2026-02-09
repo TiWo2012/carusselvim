@@ -53,9 +53,7 @@ return {
       },
     })
 
-    vim.keymap.set("n", "<leader>oc", function()
-      opencode:toggle()
-    end, { desc = "OpenCode floating terminal" })
+
 
     vim.keymap.set("n", "<leader>gg", lazygit_toggle, { desc = "Lazygit (cwd aware)" })
 
