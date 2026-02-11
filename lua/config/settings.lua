@@ -1,4 +1,4 @@
-vim.cmd.colorscheme "catppuccin"
+vim.cmd.colorscheme("catppuccin")
 
 vim.opt.clipboard = "unnamedplus"
 vim.opt.number = true
@@ -29,15 +29,16 @@ vim.opt.scrolloff = 8
 vim.opt.signcolumn = "yes"
 
 -- set some neovide specific stuff
-vim.o.guifont = "Hack Nerd Font:h11"
+vim.o.guifont = "FiraCode Nerd Font:h11"
 
 vim.g.neovide_opacity = 0.80
 vim.g.neovide_background_color = "#0f1117"
 
 vim.g.neovide_scale_factor = 1.0
 
--- Enable font ligatures for Neovide
-vim.g.neovide_enable_ligatures = true
+vim.g.neovide_cursor_vfx_mode = "railgun"
+
+vim.g.neovide_hide_mouse_when_typing = false
 
 vim.keymap.set("n", "<C-+>", function()
     vim.g.neovide_scale_factor = vim.g.neovide_scale_factor + 0.1
